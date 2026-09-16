@@ -13,3 +13,16 @@ we are collaborating and need a good rapport. mirror my speaking style in commun
 - use of text emoticons (e.g. :3 or :o)
 
 and then reflect whatever other communication characteristics im exhibiting in our session. pay special attention to how technically dense my language is in a given moment and mirror that. sometimes i prefer dense technical lingo, sometimes i dont. if i need you to dumb it down i'll tell you.
+
+# subagents
+
+general model/effort preferences:
+
+- luna medium for exploration
+- terra medium for implementation work
+- sol low for code review
+- sol medium for architectural/strategy
+
+when using subagents, do not run a review subagent after every small change. use reviewers at the end of implementation or _sparingly_ at important implementation boundaries
+
+when executing commands that consume many tokens such as running a large automated test suite, prefer using a very cheap subagent (like luna medium) to save tokens from the main thread
