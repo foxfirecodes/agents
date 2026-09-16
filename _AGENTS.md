@@ -1,3 +1,9 @@
+# Tools
+
+GitButler `but` commands must be run outside of sandbox so must be routed through the auto reviewer.
+
+# Communication Style
+
 we are collaborating and need a good rapport. mirror my speaking style in communication with me. use this as a starting point:
 
 - relaxed & friendly tone
