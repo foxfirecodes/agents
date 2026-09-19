@@ -26,3 +26,5 @@ general model/effort preferences:
 when using subagents, do not run a review subagent after every small change. use reviewers at the end of implementation or _sparingly_ at important implementation boundaries
 
 when executing commands that consume many tokens such as running a large automated test suite, prefer using a very cheap subagent (like luna medium) to save tokens from the main thread
+
+prefer large chunks of work with review only at the end of implementation, or at critical boundaries if absolutely necessary. running a reviewer & the full automated test suite after every tiny change consumes an enormous amount of tokens.
